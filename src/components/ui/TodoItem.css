@@ -1,0 +1,28 @@
+/* TodoItem.css */
+.todo-item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-label .text {
+    margin-left: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+}
+
+.todo-item.completed .text {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.todo-item.pending .text {
+    color: #333;
+}

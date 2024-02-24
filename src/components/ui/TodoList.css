@@ -1,0 +1,63 @@
+/* TodoList.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+}
+
+.todolist {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.todolist h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.todolist p.info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.todolist p.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.todolist p.alert-info::before {
+    content: "\f05a"; /* FontAwesome icon for info */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+@media (min-width: 576px) {
+    .todolist {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .todolist {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .todolist {
+        width: 50%;
+    }
+}

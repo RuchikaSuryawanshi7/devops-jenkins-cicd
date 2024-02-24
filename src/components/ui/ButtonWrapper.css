@@ -1,0 +1,37 @@
+/* ButtonWrapper.css */
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button i {
+    margin: 0;
+}
+
+.button.add i {
+    /* Adjust icon style for "Add New" button */
+}
+
+.button.search i {
+    /* Adjust icon style for "Search" button */
+}
