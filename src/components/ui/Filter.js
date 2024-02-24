@@ -1,9 +1,10 @@
 import React from 'react';
-import {getOptions} from '../../services/filter';
+import { getOptions } from '../../services/filter';
+import './Filter.css'; // Import CSS file for styling
 
 export default function Filter(props) {
     const options = getOptions();
-    const {filter, changeFilter} = props;
+    const { filter, changeFilter } = props;
     const getClass = (key) => (key === filter ? 'selected' : '');
 
     return (

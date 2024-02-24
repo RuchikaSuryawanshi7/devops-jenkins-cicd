@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import './CheckBox.css'; // Import CSS file for styling
 
 class CheckBox extends Component {
     constructor(props) {
@@ -9,14 +10,19 @@ class CheckBox extends Component {
     }
 
     handleChange(e) {
-        const {checked} = e.target;
+        const { checked } = e.target;
 
-        this.setState({checked});
+        this.setState({ checked });
         this.props.onChange(checked);
     }
 
     render() {
-        return (<input type="checkbox" checked={this.state.checked} onChange={this.handleChange.bind(this)}/>);
+        return (
+            <label className="checkbox-label">
+                <input type="checkbox" checked={this.state.checked} onChange={this.handleChange.bind(this)} />
+                <span className="custom-checkbox"></span> {/* Custom checkbox design */}
+            </label>
+        );
     }
 }
 

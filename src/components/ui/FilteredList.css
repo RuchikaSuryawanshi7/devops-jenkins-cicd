@@ -1,0 +1,28 @@
+/* FilteredList.css */
+.filtered-list {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.filtered-list .alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filtered-list .alert-info::before {
+    content: "\f05a"; /* FontAwesome icon for info */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.filtered-list ul {
+    padding: 0;
+}
+
+.filtered-list li {
+    margin-bottom: 10px;
+}

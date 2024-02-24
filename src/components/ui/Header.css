@@ -1,0 +1,21 @@
+/* Header.css */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.header-title::after {
+    content: "\f46e"; /* FontAwesome icon for list */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 10px;
+    color: white;
+}
